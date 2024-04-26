@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediForecast</title>
+    <link rel="stylesheet" href="/staticfiles/style.css">
+</head>
+<body>
+    <form action="{{url_for('predict')}}" method="post">
+
+        <input type="text" name="Glucose" id="research" placeholder="Glucose">
+        <input type="text" name="Cholesterol" id="research" placeholder="Cholesterol">
+        <input type="text" name="Hemoglobin" id="research" placeholder="Hemoglobin">
+        <input type="text" name="Platelets" id="research" placeholder="Platelets">
+        <input type="text" name="White_Blood_Cells" id="research" placeholder="White_Blood_Cells">
+        <input type="text" name="Red_Blood_Cells" id="research" placeholder="Red_Blood_Cells">
+        <input type="text" name="Hematocrit" id="research" placeholder="Hematocrit">
+        <input type="text" name="Mean_Corpuscular_Volume" id="research" placeholder="Mean_Corpuscular_Volume">
+        <input type="text" name="Mean_Corpuscular_Hemoglobin" id="research" placeholder="Mean_Corpuscular_Hemoglobin">
+        <input type="text" name="Mean_Corpuscular_Hemoglobin_Concentration" id="research" placeholder="Mean_Corpuscular_Hemoglobin_Concentration">
+        <input type="text" name="Insulin" id="research" placeholder="Insulin">
+        <input type="text" name="BMI" id="research" placeholder="BMI">
+        <input type="text" name="Systolic_Blood_Pressure" id="research" placeholder="Systolic_Blood_Pressure">
+        <input type="text" name="Diastolic_Blood_Pressure" id="research" placeholder="Diastolic_Blood_Pressure">
+        <input type="text" name="Triglycerides" id="research" placeholder="Triglycerides">
+        <input type="text" name="HbA1c" id="research" placeholder="HbA1c">
+        <input type="text" name="LDL_Cholesterol" id="research" placeholder="LDL_Cholesterol">
+        <input type="text" name="HDL_Cholesterol" id="research" placeholder="HDL_Cholesterol">
+        <input type="text" name="ALT" id="research" placeholder="ALT">
+        <input type="text" name="AST" id="research" placeholder="AST">
+        <input type="text" name="Heart_Rate" id="research" placeholder="Heart_Rate">
+        <input type="text" name="Creatinine" id="research" placeholder="Creatinine">
+        <input type="text" name="Troponin" id="research" placeholder="Troponin">
+        <input type="text" name="C-reactive_Protein" id="research" placeholder="C-reactive_Protein">
+        
+        <br>
+        <br>
+        <button type="submit" id="sub">Prediction</button>
+        
+    </form>
+
+    <br>
+    <br>
+    {{prediction_text}}
+
+</body>
+</html>
